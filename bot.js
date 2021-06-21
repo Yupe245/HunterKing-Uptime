@@ -32,7 +32,7 @@ setInterval(() => {
 }, 60000);
 
 client.on("ready", () => {
-  if (!Array.isArray(db.al("linkler"))) {
+  if (!Array.isArray(db.get("linkler"))) {
     db.set("linkler", []);
   }
 });
